@@ -30,7 +30,8 @@ const app = new Hono();
 const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:3000";
 
 app.use("*", cors({
-  origin: FRONTEND_URL,
+  origin: "https://space-frontend-jlw4.vercel.app",
+
   allowMethods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   allowHeaders: ["Content-Type", "Authorization"],
   credentials: true,
